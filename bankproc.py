@@ -10,5 +10,8 @@ def procent (babki = 0, years = 0):
         print(f'Год {i} сумма на счету {round(babki, 2)} рублей.')
         i += 1
 years = int(input('Cколько лет копить? __ '))
+if years > 150:
+    print('Ты столько не проживёшь!!!')
+    quit()
 babki = int(input('Сколько денег, нищеброд? __ '))
 procent(babki, years)
