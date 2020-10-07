@@ -14,4 +14,7 @@ if years > 150:
     print('Ты столько не проживёшь!!!')
     quit()
 babki = int(input('Сколько денег, нищеброд? __ '))
+if babki < 0:
+    print('Долги надо отдавать!!!')
+    quit()
 procent(babki, years)
