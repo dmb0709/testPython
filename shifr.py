@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-import crypt
 from sys import argv
 def koding(pkey, opentext):
-    # тут будет чтение строки из файла, а потом запись в другой с пасширением .cry
-    print(pkey, opentext, sep=' | ')
-    pass
+    slovo = ''
+    i = 0
+    while i != len(opentext):
+        bukva = chr(ord(opentext[i])+ord(pkey[2]))
+        slovo = slovo + bukva
+        print(bukva, end='')
+        i += 1
+    print(f'\n\nРезультат шифрования: {slovo}')
+    
 def enkoding(pkey, cryptotext):
     pass
 # Операции ввода ключа и текста.
