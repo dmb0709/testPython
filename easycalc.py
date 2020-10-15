@@ -20,6 +20,6 @@ elif oper == '-':
 elif oper == '/':
     a = a / b
     print(a)
-else :
+else:
     print('Операция не распознана!')
 # print('hello world!')
