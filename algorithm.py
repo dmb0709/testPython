@@ -2,7 +2,7 @@ t = 'Значит можно шифровать что-то серьëзное!!
 k = 'password'
 i = 0
 slovo = ''
-result =''
+result = ''
 while i != len(t):
     bukva = chr(ord(t[i])+ord(k[3]))
     slovo = slovo + bukva
@@ -11,7 +11,6 @@ while i != len(t):
 print(f'\n\nРезультат шифрования: {slovo}')
 # теперь расшифровка
 j = 0
-#print(slovo)
 while j != len(slovo):
     bukva2 = chr(ord(slovo[j]) - ord(k[3]))
     result = result + bukva2
