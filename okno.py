@@ -6,8 +6,12 @@ root.title("Графическая программа на Python")
 root.geometry("600x600")
 risovalca = Canvas()
 # risovalca.fill
-canvas = Canvas()
-canvas.create_line(15, 25, 200, 25)
-canvas.create_rectangle(100, 100, 105, 105)
-canvas.pack()
+
+x = 1
+while x <= 400:
+    y = x = 2
+    canvas = Canvas()
+    canvas.create_rectangle(x, y, 105, 105)
+    canvas.pack()
+    x += 1
 root.mainloop()
