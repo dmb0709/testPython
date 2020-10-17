@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 from tkinter import *
+from time import sleep
 root = Tk()
 root.title("Графическая программа на Python")
-root.geometry("600x600")
-risovalca = Canvas()
-# risovalca.fill
+root.geometry("400x400")
 
-x = 1
-while x <= 400:
-    y = x = 2
-    canvas = Canvas()
-    canvas.create_rectangle(x, y, 105, 105)
-    canvas.pack()
-    x += 1
+
+def dvijenie(x, y):
+    while x < 100:
+        canvas = Canvas()
+        canvas.create_rectangle(x, y, 105, 105)
+        canvas.pack()
+        sleep(0.1)
+        x += 1
+    
+dvijenie(10, 10)   
 root.mainloop()
