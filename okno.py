@@ -14,6 +14,7 @@ def dvijenie(x, y):
         canvas.pack()
         sleep(0.1)
         x += 1
-    
-dvijenie(10, 10)   
+
+
+dvijenie(10, 10)
 root.mainloop()
