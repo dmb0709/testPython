@@ -30,3 +30,4 @@ if len(argv) > 1:
 else:
     monf = input('Введите номер месяца от 1 до 12:  ')
     seazon(monf)
+23
