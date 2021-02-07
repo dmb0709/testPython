@@ -20,8 +20,13 @@ def vvod():
     # Здесь мы работаем с юзером
     print("Введите код региона! 0 - для выхода")
     code = input()
-    if int(code) == 0:
+    if code == '0':
         exit(0)
+    exist_key = code in d
+    if exist_key == False:
+        print('Такого кода в базе нет!')
+        vvod()
+
     print(d[code])
     vvod()
 
